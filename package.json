@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "workspaces": [
+        "react-ts-app",
+        "react-js-app"
+    ]
+}

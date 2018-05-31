@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "jsx": "React",
+        "strict": true,
+        "removeComments": true,
+        "sourceMap": true
+    }
+}
