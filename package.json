@@ -17,6 +17,8 @@
     "node-sass": "^4.9.0",
     "parcel-bundler": "parcel-bundler/parcel",
     "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
     "typescript": "^2.8.4"
   },
   "dependencies": {
@@ -25,11 +27,14 @@
     "react-dom": "^16.4.0"
   },
   "scripts": {
-    "react-ts-app:start": "parcel serve react-ts-app/public/index.html",
-    "react-ts-app:build": "parcel build react-ts-app/public/index.html --out-dir react-ts-app/build",
-    "react-ts-app:test": "jest react-ts-app/",
-    "react-js-app:start": "parcel serve react-js-app/public/index.html",
-    "react-js-app:build": "parcel build react-js-app/public/index.html --out-dir react-js-app/build",
-    "react-js-app:test": "jest react-js-app/"
+    "react-ts-app:start": "parcel serve ./react-ts-app/public/index.html",
+    "react-ts-app:build": "parcel build ./react-ts-app/public/index.html --out-dir ./react-ts-app/build",
+    "react-ts-app:test": "jest ./react-ts-app/",
+    "react-ts-app:lint": "tslint --project tsconfig.json ./react-ts-app/**/*.ts ./react-ts-app/**/*.tsx",
+    "react-ts-app:lintfix": "tslint --project tsconfig.json --fix ./react-ts-app/**/*.ts ./react-ts-app/**/*.tsx",
+
+    "react-js-app:start": "parcel serve ./react-js-app/public/index.html",
+    "react-js-app:build": "parcel build ./react-js-app/public/index.html --out-dir ./react-js-app/build",
+    "react-js-app:test": "jest ./react-js-app/"
   }
 }

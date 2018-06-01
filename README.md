@@ -25,3 +25,4 @@ Parcel is bundler just like Webpack, with a few core design differences:
 
 - Currently waiting on a new release for a bugfix for SCSS hanging builds
   [parcel-bundler/parcel/pull/1390](https://github.com/parcel-bundler/parcel/pull/1390)
+- No linting built into dev server or build step
