@@ -1,7 +1,35 @@
 {
-    "private": true,
-    "workspaces": [
-        "react-ts-app",
-        "react-js-app"
-    ]
+  "name": "parcel-monorepo",
+  "version": "1.0.0",
+  "description": "An example configuration for a Parcel based build system",
+  "author": "Roy Portas <royportas@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^23.1.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "parcel-bundler/parcel",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.8.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "scripts": {
+    "react-ts-app:start": "parcel serve react-ts-app/public/index.html",
+    "react-ts-app:build": "parcel build react-ts-app/public/index.html --out-dir react-ts-app/build",
+    "react-ts-app:test": "jest react-ts-app/",
+    "react-js-app:start": "parcel serve react-js-app/public/index.html",
+    "react-js-app:build": "parcel build react-js-app/public/index.html --out-dir react-js-app/build",
+    "react-js-app:test": "jest react-js-app/"
+  }
 }
